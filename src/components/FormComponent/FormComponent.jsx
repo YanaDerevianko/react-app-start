@@ -18,7 +18,7 @@ export const FormComponent = () => {
     e.preventDefault();
 
     if (userName.trim().length && password.trim().length && isPasswordValid) {
-      alert(`Your Name is: ${userName},\nYour Password is: ${password}`);
+      alert(`Your Name is: ${userName.trim()},\nYour Password is: ${password.trim()}`);
       setUserName("");
       setPassword("");
       setShowWarning(false);
