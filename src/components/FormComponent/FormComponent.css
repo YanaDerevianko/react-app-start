@@ -1,0 +1,43 @@
+.container {
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    color: lime;
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  input {
+    background-color: rgba(0, 128, 0, 0.5);
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 7px;
+  }
+  input[type="text"],
+  input[type="password"] {
+  color: #fff;
+}
+  .warning {
+    font-size: 26px;
+    color: lime;
+  }
+  button {
+    background-color: lime;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
