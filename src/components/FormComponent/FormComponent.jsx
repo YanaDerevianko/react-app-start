@@ -8,7 +8,7 @@ export const FormComponent = () => {
   const [showWarning, setShowWarning] = useState(false);
 
   const handlePasswordBlur = () => {
-    setIsPasswordValid(password.length >= 8);
+    setIsPasswordValid(password.trim().length >= 8);
     if (password.length < 8) {
       alert("The password is too short");
     }
@@ -17,7 +17,7 @@ export const FormComponent = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (userName !== "" && password !== "" && isPasswordValid) {
+    if (userName.trim().length && password.trim().length && isPasswordValid) {
       alert(`Your Name is: ${userName},\nYour Password is: ${password}`);
       setUserName("");
       setPassword("");
